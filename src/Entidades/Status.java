@@ -3,5 +3,6 @@ package Entidades;
 public enum Status {
     PENDENTE,
     CONFIRMADO,
-    CANCELADO
+    CANCELADO,
+    CONCLUIDO
 }

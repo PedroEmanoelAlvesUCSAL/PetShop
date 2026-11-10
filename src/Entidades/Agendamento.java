@@ -8,7 +8,7 @@ public class Agendamento<LocalTime> implements Agendavel {
     private Integer id;
     private LocalDate data;
     private LocalTime horario;
-    private Status status;
+    private Status status = Status.PENDENTE;
     private Animal animal;
     private Veterinario veterinario;
     private Servico servico;
@@ -70,17 +70,17 @@ public class Agendamento<LocalTime> implements Agendavel {
     }
 
     @Override
-    public Void confirmar() {
-        return null;
+    public void confirmar() {
+        status = Status.CONFIRMADO;
     }
 
     @Override
-    public Void cancelar() {
-        return null;
+    public void cancelar() {
+        status = Status.CANCELADO;;
     }
 
     @Override
-    public Void concluir() {
-        return null;
+    public void concluir() {
+        status = Status.CONCLUIDO;;
     }
 }

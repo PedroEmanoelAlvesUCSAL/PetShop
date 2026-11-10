@@ -1,6 +1,6 @@
 package Entidades;
 
-public class Animal {
+public abstract class Animal {
     private Integer id;
     private String nome;
     private Integer idade;
