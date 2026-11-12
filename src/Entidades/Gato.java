@@ -15,4 +15,15 @@ public class Gato extends Animal{
     public void setIndoor(Boolean indoor) {
         this.indoor = indoor;
     }
+
+    @Override
+    public String toString() {
+        return "\nNome: " + getNome() +
+                "\nTipo: Gato" +
+                "\nIdade: "+ getIdade() +" anos" +
+                "\nEspécie: " + getEspecie() +
+                "\nRaça: " + getRaca() +
+                "\nPeso: " + getPeso() + " kg" +
+                "\nIndoor: " + indoor;
+    }
 }

@@ -15,4 +15,15 @@ public class Cachorro extends Animal{
     public void setPorte(String porte) {
         this.porte = porte;
     }
+
+    @Override
+    public String toString() {
+        return "\nNome: " + getNome() +
+                "\nTipo: Gato" +
+                "\nIdade: "+ getIdade() +" anos" +
+                "\nEspécie: " + getEspecie() +
+                "\nRaça: " + getRaca() +
+                "\nPeso: " + getPeso() + " kg" +
+                "\nPorte: " + porte;
+    }
 }
